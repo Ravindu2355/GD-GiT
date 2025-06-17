@@ -60,3 +60,9 @@ def reset():
     if os.path.exists(session_file):
         os.remove(session_file)
     return jsonify({"message": "Reset"})
+
+
+# existing routes above...
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
